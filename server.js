@@ -4,9 +4,9 @@ const port = 3000;
 
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.sendFile('index.html');
 });
 
 app.listen(port, () => {
-    console.log(`Server listening at http://localhost:${port}`);
+    console.log(`listening : http://localhost:${port}`);
 });
